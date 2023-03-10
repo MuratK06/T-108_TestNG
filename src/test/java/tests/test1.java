@@ -5,7 +5,7 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import pages.*;
+import pages.ieEnstitutu.*;
 import utilities.ConfigReader;
 import utilities.Driver;
 
