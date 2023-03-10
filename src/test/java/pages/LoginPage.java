@@ -3,8 +3,8 @@ package pages;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import utulities.ConfigReader;
-import utulities.Driver;
+import utilities.ConfigReader;
+import utilities.Driver;
 
 public class LoginPage {
 

@@ -1,4 +1,4 @@
-package utulities;
+package utilities;
 
 import com.google.common.base.Function;
 import org.apache.commons.io.FileUtils;
@@ -19,7 +19,7 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-import static utulities.Driver.driver;
+import static utilities.Driver.driver;
 
 public class ResuableMethods {
 
