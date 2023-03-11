@@ -59,6 +59,31 @@ public class QualityPage {
         passwordBox.sendKeys("Nevzat152032");
         loginButton.click();
     }
+    // url>>login>>homepage==sag kose kullanici logo
+    @FindBy(xpath = "(//img[@class='img-fluid'])[1]")
+    public WebElement kullaniciLogo;
+
+    //url>>login>>homepage>>instructor==message butonu sol kose
+    @FindBy(xpath = "(//li[@class='user-dropdown-menu-item'])[5]")
+    public WebElement userProfile;
+
+    @FindBy(xpath = "//input[@id='FristName']")
+    public WebElement profileFirstNameBox;
+
+    @FindBy(name = "last_name")
+    public WebElement profileLastNameBox;
+
+    @FindBy(xpath = "//body[@id='tinymce']")
+    public WebElement biographyBox;
+
+    @FindBy(xpath = "//iframe[@id='Biography_ifr']")
+    public WebElement iframe;
+
+    @FindBy(xpath = "//*[.='Save']")
+    public WebElement saveBtn;
+
+    @FindBy(xpath = "//*[text()='Top Categories']")
+    public WebElement topCategories;
 
 
 
