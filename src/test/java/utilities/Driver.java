@@ -16,14 +16,11 @@ public class Driver {
     static WebDriver driver;
 
     public static WebDriver getDriver(){
+
         if(driver==null) {
             switch (ConfigReader.getProperty("browser")) {
-                case "chrome":
 
-                    WebDriverManager.chromedriver().setup();
-                    driver = new ChromeDriver();
 
-                    break;
                 case "safari":
                     WebDriverManager.safaridriver().setup();
                     driver = new SafariDriver();
@@ -32,9 +29,14 @@ public class Driver {
                     WebDriverManager.firefoxdriver().setup();
                     driver = new FirefoxDriver();
                     break;
+                case "chrome":
+
                 default:
+                    System.setProperty("webdriver.http.factory", "jdk-http-client");
                     WebDriverManager.chromedriver().setup();
                     driver = new ChromeDriver();
+
+
             }
             driver.manage().window().maximize();
             driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
