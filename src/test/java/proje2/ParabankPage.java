@@ -1,4 +1,4 @@
-package proje;
+package proje2;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -19,7 +19,7 @@ private ResuableMethods resuableMethods;
     @FindBy(xpath = "//input[@id='customer.firstName']")
     public WebElement firstNameButon;
 
-    @FindBy(xpath = "((//input[@class='button'])[2]")
+    @FindBy(xpath = "(((//input[@type='submit'])[2]")
     public WebElement registerOnay;
 
     @FindBy(xpath = "//*[text()='Transfer Funds']")
@@ -30,6 +30,20 @@ private ResuableMethods resuableMethods;
 
     @FindBy(xpath = "//input[@class='button']")
     public WebElement transferButonu;
+
+    @FindBy(xpath = "//*[text()='Request Loan']")
+    public WebElement requestLoanButon;
+
+    @FindBy(xpath = "//input[@id='amount']")
+    public WebElement loanAmaountButon;
+
+    @FindBy(xpath = "//input[@type='submit']")
+    public WebElement applynowButon;
+
+    @FindBy(xpath = "//*[text()='Log Out']")
+    public WebElement logoutButon;
+
+
 
 
 }
